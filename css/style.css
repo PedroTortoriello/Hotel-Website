@@ -361,10 +361,6 @@ section{
    margin-bottom: 1rem;
 }
 
-.footer__description {
-   font-size: 0.9rem;
-}
-
 .footer__links {
    list-style-type: none;
    padding: 0;
@@ -432,6 +428,7 @@ section{
    .header .navbar.active{
       display: flex;
    }
+
 }
 
 
