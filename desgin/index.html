@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Imperial</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<!--==================== FONT AWESOME ====================-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<!--==================== CSS ====================-->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<!--==================== HEADER ====================-->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">Hotel Imperial</a>
+      <a href="#availability" class="btn">Fazer uma Reserva</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#reservation">Reservar</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#contact">Contato</a>
+   </nav>
+</section>
+
+<!--==================== HOME ====================-->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>Quarto</h3>
+               <a href="#avaliability" class="btn">Reservar</a>
+
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/restaurant-hotel.jpg" width="1280" height="853">
+            <div class="flex">
+               <h3>Restaurante</h3>
+               <a href="#reservation" class="btn">Fazer uma reserva</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/swimming-pool.jpg" alt="">
+            <div class="flex">
+               <h3>Piscina</h3>
+               <a href="#contact" class="btn">Entrar em Contato</a>  
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+   </div>
+
+</section>
+
+<!--==================== RESERVATION ====================-->
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>Fazer uma Reserva</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Check-in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check-out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adultos <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adulto</option>
+               <option value="2">2 adultos</option>
+               <option value="3">3 adultos</option>
+               <option value="4">4 adultos</option>
+               <option value="5">5 adultos</option>
+               <option value="6">6 adultos</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Crianças <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">------</option>
+               <option value="1">1 Crianças</option>
+               <option value="2">2 Crianças</option>
+               <option value="3">3 Crianças</option>
+               <option value="4">4 Crianças</option>
+               <option value="5">5 Crianças</option>
+               <option value="6">6 Crianças</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Quartos <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Quarto</option>
+               <option value="2">2 Quartos</option>
+               <option value="3">3 Quartos</option>
+               <option value="4">4 Quartos</option>
+               <option value="5">5 Quartos</option>
+               <option value="6">6 Quartos</option>
+            </select>
+         </div>
+         
+      </div>
+      <input type="submit" value="Fazer Reserva" name="check" class="btn">
+   </form>
+
+</section>
+
+<!--==================== GALLERY ====================-->
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/home-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img src="images/swimming-pool.jpg" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+   
+</section>
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Entre em Contato</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Insira seu Nome" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="Insira seu E-mail" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Insira seu número" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Escreva sua Mensagem" cols="30" rows="10"></textarea>
+         <input type="submit" value="Enviar Mensagem" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Perguntas Frequentes</h3>
+         <div class="box active">
+            <h3>Como cancelar?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.</p>
+         </div>
+         <div class="box">
+            <h3>Quais são formas de pagamento??</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+         <div class="box">
+            <h3>Como reivindicar códigos de cupons?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+         <div class="box">
+            <h3>Quais são os requisitos de idade?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+   <div class="footer__container">
+       <div class="footer__column">
+           <div class="footer__section">
+               <h2 class="footer__title">Ajuda</h2>
+               <ul class="footer__links">
+                  <li><a href="#">Acompanhe sua reserva</a></li>
+                  <li><a href="#">Alterações e Cancelamentos</a></li>
+                  <li><a href="#">Serviços</a></li>
+              </ul>
+           </div>
+       </div>
+       <div class="footer__column">
+           <div class="footer__section">
+               <h2 class="footer__title">Links Úteis</h2>
+               <ul class="footer__links">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Sobre</a></li>
+                   <li><a href="#">Serviços</a></li>
+                   <li><a href="#">Contato</a></li>
+               </ul>
+           </div>
+       </div>
+         <div class="footer__column">
+            <div class="footer__section">
+               <h2 class="footer__title">Outros</h2>
+               <ul class="footer__links">
+                  <li><a href="#">Contato</a></li>
+                  <li><a href="#">Suporte</a></li>
+                  <li><a href="#">Trabalhe Conosco</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__section">
+            <h2 class="footer__title">Contato</h2>
+            <address class="footer__address">
+               <p>Endereço: Angra dos Reis - RJ</p>
+               <p>Email: hotelimperial@gmail.com</p>
+            </address>
+         </div> 
+   </div>
+   <div class="footer__bottom">
+       <p>&#169; 2023 Pedro Tortoriello. Todos os direitos reservados.</p>
+   </div>
+   <div class="footer__terms">
+      <a href="#" class="footer__terms-link">Termos e Condições</a>
+      <a href="#" class="footer__terms-link">Política de Privacidade</a>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- JavaScript  -->
+<script src="js/script.js"></script>
+</body>
+</html>
